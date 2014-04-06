@@ -21,3 +21,5 @@ The parameters available so far are:
 - seedType: select from various grid initial states
 - refreshInterval: animation refresh rate (in miliseconds)
 - colourmap: choice of matplotlib colourmaps
+
+![an instance of the Game Of Life at step 107](screenshot.png)
