@@ -9,7 +9,24 @@ Two files are included:
 
 #### General Overview
 My implementation uses Numpy, Scipy and Matplotlib. The Life grid is updated on a 2D plot using Matplotlib.
+The patterns used on the grid are read from [pattern files in text format](http://conwaylife.com/wiki/Plaintext).
 
+You can initialise the grid using a pattern by specifying its name and (x,y) location as the seedType parameter.
+
+    # generate an acorn pattern at x=20, y=40
+    'seedType': ('acorn', (20, 40))
+
+Alternatively, you can specify the parameter 'mixed pattern' with a tuple containing the number of random patterns to generate.
+
+    # generate 7 random patterns.
+    'seedType': ('mixed pattern', (7,))
+
+Finally, you can populate the grid with random live cells as so:
+
+    # populate the grid with 3000 live cells
+    'seedType': ('random', (3000,))
+
+Omitting the `seedType` parameters results in a randomly generated grid.
 
 #### Parameters
 You can pass various parameters to control the Life grid. These can be expanded further to create a flexible simulation environment.
