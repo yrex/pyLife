@@ -14,7 +14,7 @@ if __name__ == '__main__':
         'rows': iNumRows,
         'cols': iNumCols,
         'steps': iNumSteps,
-        'seedType': ('Mixed Pattern', [4] ),
+        'seedType': ('acorn', (20, 40)),
         'refreshInterval': 50,
         'colourmap': 'Set3'
     }
@@ -22,4 +22,3 @@ if __name__ == '__main__':
     # Create Game Of Life instance and run
     GoL = life.Life(**dcParams)
     GoL.run()
-	
